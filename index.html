@@ -1,12 +1,13 @@
 <html>
 	<head>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.js"></script>
 		<script type="text/javascript" src="WordScramble.js"></script>
 		<link rel="stylesheet" type="text/css" href="WordScramble.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body class="MainDiv" ng-app="WordScrambleApp" ng-controller="WordScrambleCtrl" ng-init="Init()" key-capture tabindex="0">
-		<input class="HiddenTextBox" type="text">
+		<input class="HiddenTextBox" type="text" readonly="readonly">
 		<div>
 		  <div class="SubDiv">
 			<div class="Word">

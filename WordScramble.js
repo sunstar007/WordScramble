@@ -8,7 +8,7 @@ wordScrambleApp.service('WordNikService', ['$http', '$q', '$rootScope', function
   	var deferred = $q.defer();
     
 		$http.get(
-			"https://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&excludePartOfSpeech=proper-noun&minCorpusCount=5000&&minDictionaryCount=30&&minLength=" + wordSize + "&maxLength=" + wordSize + "&api_key=" + api_key
+			"https://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&excludePartOfSpeech=proper-noun&minCorpusCount=10000&&minDictionaryCount=30&&minLength=" + wordSize + "&maxLength=" + wordSize + "&api_key=" + api_key
 		).success(function (response) {
       deferred.resolve(response.word.toLowerCase());
 		}).error(function (data, status, headers, config) {

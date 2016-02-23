@@ -1,0 +1,30 @@
+<html>
+	<body class="MainDiv" ng-app="WordScrambleApp" ng-controller="WordScrambleCtrl" ng-init="Init()" key-capture tabindex="0">
+		<div>
+		  <div class="SubDiv">
+			<div class="Word">
+			  <div class="Letter" ng-repeat="letter in originalLetters track by $index">{{letter}}</div>
+			</div>
+			<div class="UserGuessDiv">
+			  <div class="UserGuessPlaceholder">
+				<div class="Placeholder" ng-repeat="i in GetWordSize() track by $index"></div>
+			  </div>
+			  <div class="UserGuess">
+				<div class="Guess" ng-class="guessResult" ng-repeat="letter in guessedLetters track by $index">
+				  {{letter}}
+				</div>
+			  </div>      
+			</div>
+			<div class="Scorecard">
+			  <span class="Score">Score: {{score}}</span><span class="Timer">Time: {{timeInSeconds}}</span>
+			</div>
+			<div class="GameOverBackground" ng-show="gameOver"></div>
+			<div class="GameOver" ng-show="gameOver">
+			  <div class="GameOverText">Game Over!</div>
+        <div class="Score">Score: {{score}}</div>
+        <div class="ReplayMessage">Press 'Enter' to replay</div>
+			</div>
+		  </div>
+		</div>	
+	</body>
+</html>

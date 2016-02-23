@@ -1,0 +1,136 @@
+.SubDiv {
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.Score {
+  text-transform: uppercase;
+}
+
+.ReplayMessage {;
+    font-size: medium;
+    margin-top: 25px;  
+}
+
+.GameOverText {
+  font-size: x-large;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.GameOverBackground {
+    background-color: white;
+    opacity: 0.9;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.GameOver {
+    width: 220px;
+    height: 130px;
+    font-family: Arial;
+    background: coral;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 10px;
+    border: 3px solid;
+    margin: 0 auto;
+    top: -200px;
+    position: relative;
+    z-index: 2;
+}
+
+.Scorecard {
+    margin-top: 130px;
+    font-family: Arial;
+    text-transform: uppercase;
+    background: lightblue;
+    width: 200px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Timer {
+  margin-left: 15px;
+}
+
+.Word {
+  margin-bottom: 40px;
+  height: 50px;
+}
+
+.Letter {
+  float: left;
+  font-family: Arial;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  margin: 5px;
+  background: #ffcccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+
+.UserGuessDiv {
+    margin: 0 auto;
+    width: 270px;
+}
+
+.UserGuessPlaceholder {
+    margin: 0 auto;
+    width: 270px;
+}
+
+.UserGuess {
+  clear: left;
+  position: fixed;
+}
+
+.Placeholder {
+  float: left;
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  background: lightgray;
+  border-radius: 50%;
+}
+
+.Guess {
+  float: left;
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin: 5px;
+  background: orange;
+  border-radius: 50%;
+}
+
+.Guess.Success {
+  background: lightgreen; 
+}
+
+.Guess.Failure {
+  background: coral;
+}

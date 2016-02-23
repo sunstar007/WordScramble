@@ -3,6 +3,7 @@
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.js"></script>
 		<script type="text/javascript" src="WordScramble.js"></script>
 		<link rel="stylesheet" type="text/css" href="WordScramble.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body class="MainDiv" ng-app="WordScrambleApp" ng-controller="WordScrambleCtrl" ng-init="Init()" key-capture tabindex="0">
 		<div>
@@ -21,7 +22,7 @@
 			  </div>      
 			</div>
 			<div class="Scorecard">
-			  <span class="Score">Score: {{score}}</span><span class="Timer">Time: {{timeInSeconds}}</span>
+			  <span class="Score">Score: {{score}}</span><span class="Timer"><i class="fa fa-clock-o"></i> {{timeInSeconds}}</span>
 			</div>
 			<div class="GameOverBackground" ng-show="gameOver"></div>
 			<div class="GameOver" ng-show="gameOver">

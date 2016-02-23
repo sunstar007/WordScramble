@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body class="MainDiv" ng-app="WordScrambleApp" ng-controller="WordScrambleCtrl" ng-init="Init()" key-capture tabindex="0">
+		<input class="HiddenTextBox" type="text">
 		<div>
 		  <div class="SubDiv">
 			<div class="Word">
@@ -33,4 +34,9 @@
 		  </div>
 		</div>	
 	</body>
+	<script>
+		$(document).ready(function() {
+			$(".HiddenTextBox").focus();
+		});
+	</script>
 </html>

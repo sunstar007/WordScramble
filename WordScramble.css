@@ -4,6 +4,13 @@
     margin-top: 100px;
 }
 
+.UserInstruction {
+  text-align: center;
+  margin-top: 15px;
+  font-family: Arial;
+  color: grey;
+}
+
 .Score {
   text-transform: uppercase;
 }
@@ -33,8 +40,8 @@
 }
 
 .GameOver {
-    width: 220px;
-    height: 130px;
+    width: 240px;
+    height: 160px;
     font-family: Arial;
     background: coral;
     text-align: center;

@@ -24,10 +24,14 @@
 			<div class="Scorecard">
 			  <span class="Score">Score: {{score}}</span><span class="Timer"><i class="fa fa-clock-o"></i> {{timeInSeconds}}</span>
 			</div>
+      <div class="UserInstruction">
+        Just start typing!
+      </div>
 			<div class="GameOverBackground" ng-show="gameOver"></div>
 			<div class="GameOver" ng-show="gameOver">
 			  <div class="GameOverText">Game Over!</div>
         <div class="Score">Score: {{score}}</div>
+        <div class="Score">Last Word: {{word}}</div>
         <div class="ReplayMessage">Press 'Enter' to replay</div>
 			</div>
 		  </div>
